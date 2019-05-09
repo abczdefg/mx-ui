@@ -2,7 +2,7 @@ import { Components } from '@mx-ui';
 import { toComponentName, dasherize } from './index.js';
 import { t } from './translation.js';
 
-export function getExamplesRouter() {
+export function getExamplesRoutes() {
   return require.context('@examples/demos/pages/', true, /\.vue$/).keys().map(url => {
     let name = /([^\\/]+)\.\w+$/.exec(url)[1];
 
@@ -25,7 +25,7 @@ export function getComponentList() {
 }
 
 
-export function getDocsRouter() {
+export function getDocsRoutes() {
   return [
     {
       path: 'intro',

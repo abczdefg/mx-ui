@@ -1,11 +1,11 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import DocIndex from '@docs/components/DocIndex.vue';
-import { getDocsRouter } from '@utils/get-components-helper.js';
+import { getDocsRoutes } from '@utils/get-components-helper.js';
 
 Vue.use(Router);
 
-const componentRouters = getDocsRouter();
+const componentRouters = getDocsRoutes();
 
 const router = new Router({
   base: '/',
