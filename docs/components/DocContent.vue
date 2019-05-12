@@ -39,6 +39,7 @@ export default {
 };
 </script>
 <style lang="less">
+  @import '~@mx-ui/styles/var.less';
   .doc-content {
     position: relative;
     padding-left: 250px;

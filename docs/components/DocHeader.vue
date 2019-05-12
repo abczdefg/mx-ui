@@ -18,6 +18,7 @@ export default {
 };
 </script>
 <style lang="less">
+  @import '~@mx-ui/styles/var.less';
   .doc-header {
     height: 60px;
     line-height: 60px;

@@ -1,0 +1,41 @@
+@picker-cls: ~"@{css-prefix}picker";
+
+.@{picker-cls} {
+  position: relative;
+  background: @white;
+
+  &__columns {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+  }
+  &__highlight {
+    position: absolute;
+    top: 50%;
+    margin-top: -18px;
+    width: 100%;
+    background: transparent;
+    border-top: 1px solid @blue;
+    border-bottom: 1px solid @blue;
+    pointer-events: none;
+  }
+}
+
+.@{picker-cls}-column {
+  position: relative;
+  flex: 1 1 0;
+  &__wrapper {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  &__option {
+    color: @gray;
+    padding: 0 10px;
+    text-align: center;
+
+    &--selected {
+      color: @black;
+    }
+  }
+}

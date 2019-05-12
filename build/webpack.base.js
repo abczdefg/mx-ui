@@ -65,14 +65,6 @@ const webpackConfig = {
           },
           {
             loader: 'less-loader'
-          },
-          {
-            loader: 'sass-resources-loader',
-            options: {
-              resources: [
-                utils.resolve('src/styles/css/var.less')
-              ]
-            }
           }
         ]
       },

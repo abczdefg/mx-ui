@@ -38,6 +38,7 @@ export default {
 };
 </script>
 <style lang="less">
+  @import '~@mx-ui/styles/var.less';
   @header-height: 60px;
   .doc-index {
     position: relative;

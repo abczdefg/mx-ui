@@ -48,6 +48,7 @@ export default {
 };
 </script>
 <style lang="less">
+  @import '~@mx-ui/styles/var.less';
   .doc-sidebar {
     width: 250px;
     background: @white;

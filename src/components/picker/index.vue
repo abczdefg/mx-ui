@@ -117,25 +117,3 @@ export default create({
   }
 });
 </script>
-<style lang="less">
-  .mx-picker {
-    position: relative;
-    background: @white;
-
-    &__columns {
-      display: flex;
-      flex-direction: row;
-      overflow: hidden;
-    }
-    &__highlight {
-      position: absolute;
-      top: 50%;
-      margin-top: -18px;
-      width: 100%;
-      background: transparent;
-      border-top: 1px solid @blue;
-      border-bottom: 1px solid @blue;
-      pointer-events: none;
-    }
-  }
-</style>

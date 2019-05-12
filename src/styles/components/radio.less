@@ -1,0 +1,40 @@
+@radio-cls: ~"@{css-prefix}radio";
+@mx-radio-size: 20px;
+.@{radio-cls} {
+  display: flex;
+
+  &__input {
+    display: inline-block;
+    line-height: @mx-radio-size;
+  }
+  &__control {
+    display: none;
+  }
+  &__icon {
+    font-size: @mx-radio-size;
+
+    .@{radio-cls}__control + & {
+      &:before {
+        // &:extend(.icon-radio:before);
+        color: @gray;
+      }
+    }
+    .@{radio-cls}__control:checked + & {
+      &:before {
+        // &:extend(.icon-radio-checked:before);
+        color: @blue;
+      }
+    }
+    .@{radio-cls}__control[disabled] + & {
+      border-radius: 50%;
+      &:before {
+        color: @gray;
+        opacity: 0.3;
+      }
+    }
+  }
+  &__label {
+    flex: 1;
+    line-height: @mx-radio-size;
+  }
+}

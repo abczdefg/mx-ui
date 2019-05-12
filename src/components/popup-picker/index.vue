@@ -95,22 +95,3 @@ export default create({
   }
 });
 </script>
-<style lang="less">
-  .mx-popup-picker {
-    .mx-popup {
-      padding: 0;
-    }
-
-    .mx-header {
-      display: flex;
-
-      &__left,
-      &__right {
-        padding: 10px;
-      }
-      &__title {
-        flex: 1;
-      }
-    }
-  }
-</style>

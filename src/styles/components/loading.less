@@ -1,0 +1,47 @@
+@loading-cls: ~"@{css-prefix}loading";
+@circular-animate: ~"@{css-prefix}circular";
+
+.@{loading-cls} {
+  font-size: 0;
+  display: inline-block;
+  vertical-align: middle;
+
+  &__spinner {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    animation: mx-rotate 2s linear infinite;
+  }
+
+  &__circular {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+
+    circle {
+      stroke: currentColor;
+      stroke-width: 3;
+      stroke-linecap: round;
+      animation: mx-circular 1.5s ease-in-out infinite;
+
+    }
+  }
+}
+
+@keyframes @circular-animate {
+  // 周长40pi < 150
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+  }
+
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -40;
+  }
+
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -120;
+  }
+}

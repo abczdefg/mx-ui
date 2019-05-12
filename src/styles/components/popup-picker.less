@@ -1,0 +1,21 @@
+@popup-picker-cls: ~"@{css-prefix}popup-picker";
+@popup-cls: ~"@{css-prefix}popup";
+@header-cls: ~"@{css-prefix}header";
+
+.@{popup-picker-cls} {
+  .@{popup-cls} {
+    padding: 0;
+  }
+
+  .@{header-cls} {
+    display: flex;
+
+    &__left,
+    &__right {
+      padding: 10px;
+    }
+    &__title {
+      flex: 1;
+    }
+  }
+}

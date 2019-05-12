@@ -127,23 +127,3 @@ export default create({
   }
 });
 </script>
-<style lang="less">
-  .mx-picker-column {
-    position: relative;
-    flex: 1 1 0;
-    &__wrapper {
-      position: absolute;
-      top: 0;
-      width: 100%;
-    }
-    &__option {
-      color: @gray;
-      padding: 0 10px;
-      text-align: center;
-
-      &--selected {
-        color: @black;
-      }
-    }
-  }
-</style>

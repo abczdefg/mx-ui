@@ -22,28 +22,3 @@ export default create({
   }
 });
 </script>
-<style lang="less">
-  .mx-cell {
-    font-size: 16px;
-    line-height: 24px;
-    padding: 10px 15px;
-    background: @white;
-    border-top: 1px solid @border-color;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-
-    &:last-child {
-      border-bottom: 1px solid @border-color;
-    }
-    &__title {
-      flex: 1;
-      color: @black;
-    }
-    &__value {
-      color: @gray;
-      vertical-align: middle;
-    }
-  }
-</style>
