@@ -7,6 +7,7 @@ import MxLoading from './components/loading/index';
 import MxPopupPicker from './components/popup-picker/index';
 import MxNavBar from './components/nav-bar/index';
 import MxCard from './components/card/index';
+import MxCheckbox from './components/checkbox/index';
 
 const Components = [
   MxCell,
@@ -17,7 +18,8 @@ const Components = [
   MxLoading,
   MxPopupPicker,
   MxNavBar,
-  MxCard
+  MxCard,
+  MxCheckbox
 ];
 
 function install(Vue) {
@@ -42,7 +44,8 @@ export {
   MxLoading,
   MxPopupPicker,
   MxNavBar,
-  MxCard
+  MxCard,
+  MxCheckbox
 };
 
 export default {

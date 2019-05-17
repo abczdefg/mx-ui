@@ -1,13 +1,13 @@
-# Radio
+# Checkbox
 
-> 单选框组件
+> 多选框组件
 
 ## 基本用法
 
-通过`v-model`绑定选中值，通过`options`控制单选框选项，包含`label`, `value`, `disabled`属性
+通过`v-model`绑定选中值，通过`options`控制多选框选项，包含`label`, `value`, `disabled`属性
 
 ```html
-<mx-radio
+<mx-checkbox
   :options="[{
     label: '选项1',
     value: '选项1'
@@ -24,12 +24,12 @@
   }]"
   v-model="value"
 >
-</mx-radio>
+</mx-checkbox>
 ```
 
 ## API
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
-| v-model | 绑定选中值 | `String` |  |
+| v-model | 绑定选中值 | `Array` | `[]` |
 | options | 选项列表 | `Array` | `[]` |

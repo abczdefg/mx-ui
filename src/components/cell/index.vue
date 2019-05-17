@@ -18,7 +18,7 @@ export default create({
   name: 'mx-cell',
   props: {
     title: String,
-    value: String
+    value: {}
   }
 });
 </script>

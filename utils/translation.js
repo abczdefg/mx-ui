@@ -8,7 +8,8 @@ const tString = {
   'picker': '选择器',
   'popup-picker': '弹出选择器',
   'popup': '弹出层',
-  'radio': '单选框'
+  'radio': '单选框',
+  'checkbox': '多选框'
 };
 
 const t = (en) => {

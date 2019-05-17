@@ -1,0 +1,38 @@
+@checkbox-cls: ~"@{css-prefix}checkbox";
+@mx-checkbox-size: 20px;
+.@{checkbox-cls} {
+  display: flex;
+
+  &__input {
+    display: inline-block;
+    line-height: @mx-checkbox-size;
+  }
+  &__control {
+    display: none;
+  }
+  &__icon {
+    font-size: @mx-checkbox-size;
+
+    .@{checkbox-cls}__control + & {
+      &:before {
+        color: @gray;
+      }
+    }
+    .@{checkbox-cls}__control:checked + & {
+      &:before {
+        color: @blue;
+      }
+    }
+    .@{checkbox-cls}__control[disabled] + & {
+      border-radius: 50%;
+      &:before {
+        color: @gray;
+        opacity: 0.3;
+      }
+    }
+  }
+  &__label {
+    flex: 1;
+    line-height: @mx-checkbox-size;
+  }
+}
